@@ -5,6 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Few Tailoring</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .custom-cta-section {
+            background-color: #1f2235; /* Dark background */
+            color: #ffffff;
+            padding: 60px 0;
+        }
+
+        .cta-title {
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+
+        .cta-text {
+          margin: 0;
+          font-size: 16px;
+          line-height: 1.6;
+        }
+
+        .cta-button {
+          display: inline-block;
+          background-color: #ff6a00;
+          color: #fff;
+          padding: 12px 24px;
+          border-radius: 25px;
+          text-decoration: none;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+          background-color: #e55d00;
+        }
+
+  .scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .review-card {
+    display: inline-block;
+    width: 27vw;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+    vertical-align: top;
+    white-space: normal; /* ✅ allow text wrapping */
+  }
+
+  .card {
+    height: 33vh;
+  }
+  
+  .scroll-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+  }
+
+  .card p {
+    margin-bottom: 0.5rem;
+  }
+
+  .scroll-container::after {
+  content: "";
+  display: inline-block;
+  width: 1rem;
+}
+
+    </style>
 </head>
 <body>
 
@@ -57,334 +130,400 @@
                 </div>
             </div>
         </div>
-
     </header>
 
-    <!--ABOUT SECTION-->
-    <section class="about">
-        <!--ABOUT US-->
-        <section class="row about-us justify-content-center align-items-center">
-            <div class="col m-5" alt="left box">
-                <h2>Your Trusted Tailor in Nuwara Eliya</h2><br><br>
-                <p>At Few Tailoring, we blend decades of craftsmanship with modern elegance to create garments that reflect your unique style. Whether you need alterations, custom tailoring, or bridal adjustments, we’re here to perfect every detail. Serving Nuwara Eliya since 2015, we take pride in turning fabric into art.</p>
+    <!-- ABOUT SECTION -->
+    <section class="about container py-5">
+        <!-- ABOUT US -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 px-4 py-3">
+                <h2>Your Trusted Tailor in Nuwara Eliya</h2>
+                <p>
+                    At Few Tailoring, we blend decades of craftsmanship with modern elegance to create garments that reflect your unique style. Whether you need alterations, custom tailoring, or bridal adjustments, we’re here to perfect every detail. Serving Nuwara Eliya since 2015, we take pride in turning fabric into art.
+                </p>
             </div>
-            <div class="col-5 m-3" alt="right box">
-                <img class="w-90" src="resources/tailor.jpg" alt="about us picture">
+            <div class="col-lg-5 col-md-12 px-4 py-3">
+                <img src="resources/tailor.jpg" class="img-fluid" alt="about us picture">
+            </div>
+        </div>
+        </section>
+
+        <!-- ABOUT STATISTICS -->
+        <section class="custom-cta-section">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-3">
+                  <h4 class="cta-title">200+</h4>
+                  <p class="cta-text">Happy Customers</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="cta-title">50+</h4>
+                    <p class="cta-text">Unique Products</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="cta-title">100+</h4>
+                    <p class="cta-text">Custom Orders Completed</p>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="cta-title">3+</h4>
+                    <p class="cta-text">Years of Service</p>
+                </div>
+              </div>
             </div>
         </section>
 
-        <!--ABOUT STATICS-->
-        <section class="row about-statics">
-            <div class="col" alt="stac 1">
-                <p>200+</p>
-                <p>Happy Customers</p>
-            </div>
-            <div class="col" alt="stac 2">
-                <p>50+</p>
-                <p>Unique Products </p>
-            </div>
-            <div class="col" alt="stac 3">
-                <p>100+</p>
-                <p>Custom Orders Completed </p>
-            </div>
-            <div class="col" alt="stac 4">
-                <p>3+</p>
-                <p>Custom Orders Completed </p>
-            </div>
-        </section>
-
-        <!--ABOUT WHY CHOOSE-->
-        <section class="row justify-content-center align-items-center about-why-choose">
-            <div class="col-4 m-5">
+        <!-- WHY CHOOSE US -->
+        <section class="about container py-5">
+        <div class="row justify-content-center align-items-start">
+            <div class="col-lg-4 col-md-6 px-4 py-3">
                 <h2>Why Few Tailoring?</h2>
-                <p>At Few Tailoring, we believe every stitch matters. Our mission is to deliver perfectly fitted, stylish garments that make you look and feel your best. With a focus on quality, craftsmanship, and personalized service, we turn your fashion ideas into reality — whether it’s everyday wear or something for a special occasion.</p>
+                <p>
+                    At Few Tailoring, we believe every stitch matters. Our mission is to deliver perfectly fitted, stylish garments that make you look and feel your best. With a focus on quality, craftsmanship, and personalized service, we turn your fashion ideas into reality — whether it’s everyday wear or something for a special occasion.
+                </p>
             </div>
-            <div class="col m-2">
-                <img href="#">
-                <p>🕒 Fast Turnaround (As Quick as 24 Hours!)</p>
-                <p>We value your time—get your outfit tailored and ready without the long wait.</p>
+            <div class="col-md-8 row">
+                <div class="col-md-6 col-12 px-3 py-2">
+                    <p class="fw-bold">🕒 Fast Turnaround (As Quick as 24 Hours!)</p>
+                    <p>We value your time—get your outfit tailored and ready without the long wait.</p>
+                </div>
+                <div class="col-md-6 col-12 px-3 py-2">
+                    <p class="fw-bold">💎 Premium Fabrics & Attention to Detail</p>
+                    <p>We handpick the finest materials and perfect every stitch for an exceptional finish.</p>
+                </div>
+                <div class="col-md-6 col-12 px-3 py-2">
+                    <p class="fw-bold">✂️ 3+ Years of Combined Expertise</p>
+                    <p>Our team blends traditional techniques with modern trends to deliver flawless results.</p>
+                </div>
+                <div class="col-md-6 col-12 px-3 py-2">
+                    <p class="fw-bold">✅ 100% Satisfaction Guarantee</p>
+                    <p>Your satisfaction is our promise—alterations and adjustments until it’s just right.</p>
+                </div>
             </div>
-            <div class="col">
-                <img href="#">
-                <p>💎 Premium Fabrics & Attention to Detail</p>
-                <p>We handpick the finest materials and perfect every stitch for an exceptional finish.</p>
-            </div>
-            <div class="col">
-                <img href="#">
-                <p>✂️ 3+ Years of Combined Expertise</p>
-                <p>Our team blends traditional techniques with modern trends to deliver flawless results.</p>
-            </div>
-            <div class="col">
-                <img href="#">
-                <p>✅ 100% Satisfaction Guarantee</p>
-                <p>Your satisfaction is our promise—alterations and adjustments until it’s just right.</p>
-            </div>
-        </section>
-
+        </div>
     </section>
 
-    <!--POPULAR SERVICES SECTION-->
-    <section class="services">
+    <!-- SERVICES SECTION -->
+    <section class="services container py-5 text-center">
         <h2>What We Offer</h2>
-        <p>Precision Tailoring for Every Need – From Everyday Wear to Once-in-a-Lifetime </p>
-        <section>
-            <div>
-                <p>Custom Tailoring</p>
+        <p>Precision Tailoring for Every Need – From Everyday Wear to Once-in-a-Lifetime</p>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4 col-sm-6 mb-4">
+                <h5>Custom Tailoring</h5>
                 <p>Bespoke Garments, Designed for You</p>
-                <button>Start Your Custom Design</button>
+                <button class="btn btn-primary">Start Your Custom Design</button>
             </div>
-            <div>
-                <p>Alterations & Repairs </p>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <h5>Alterations & Repairs</h5>
                 <p>Revive Your Wardrobe, Perfect Your Fit</p>
-                <button>Get a Quote</button>
+                <button class="btn btn-primary">Get a Quote</button>
             </div>
-            <div>
-                <p>Wedding & Special Occasions</p>
+            <div class="col-md-4 col-sm-6 mb-4">
+                <h5>Wedding & Special Occasions</h5>
                 <p>Your Big Day, Perfectly Stitched</p>
-                <button>Plan Your Perfect Look</button>
+                <button class="btn btn-primary">Plan Your Perfect Look</button>
             </div>
-        </section>
-    </section>
-
-    <!--CALL TO ACTION SECTION-->
-    <section class="call">
-        <div>
-            <h2>Call-to-Action</h2>
-            <p>Book a free consultation today, and let’s create something extraordinary together.</p>
-        </div>
-        <button>Call to Action</button>
-    </section>
-
-    <!--REVIEW SECTION-->
-    <section class="review">
-        <h2>Hear From Our Clients</h2>
-        <div>
-            <img src="#" alt="">
-            <p>Rachel M</p>
-            <p>2025/01/01</p>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-            <p>I was a nervous bride with a vintage gown that needed major alterations. The team listened to my vision, preserved the delicate lace, and made it fit like it was made for me. They even hand-delivered it the day before my wedding! Forever grateful</p>
-        </div>
-
-        <div>
-            <img src="#" alt="">
-            <p>Michael K</p>
-            <p>2025/01/05</p>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-            <p>I wanted a suit that stood out for my wedding, and [Shop Name] nailed it! The attention to detail on the lapels and lining was incredible. My groomsmen loved their tailored looks too – worth every penny</p>
-        </div>
-
-        <div>
-            <img src="#" alt="">
-            <p>Priya S</p>
-            <p>2025/01/09</p>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-            <p>I’ve been coming here for years – they’ve hemmed my work pants, fixed my kids’ backpack zippers, and even tailored my favorite jacket. Fast, friendly, and always fair pricing. The only tailor I trust</p>
-        </div>
-
-        <div>
-            <img src="#" alt="">
-            <p>David R</p>
-            <p>2025/01/14</p>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-            <p>My grandfather’s 1940s wool coat was falling apart, but [Shop Name] restored it beautifully. They matched the original stitching perfectly and even reinforced the lining. Now it’s a family heirloom ready for another generation</p>
-        </div>
-
-        <div>
-            <img src="#" alt="">
-            <p>Sarah L</p>
-            <p>2025/01/20</p>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-            <p>Our company ordered custom blazers for our team, and [Shop Name] made the process seamless. They handled 20+ fittings with patience and delivered flawless results on time. Our team looks sharp and feels confident</p>
-        </div>
-
-        <div>
-            <img src="#" alt="">
-            <p>Sarah L</p>
-            <p>2025/01/20</p>
-            <ul>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-                <li><img src="" alt=""></li>
-            </ul>
-            <p>Our company ordered custom blazers for our team, and [Shop Name] made the process seamless. They handled 20+ fittings with patience and delivered flawless results on time. Our team looks sharp and feels confident</p>
         </div>
     </section>
 
-    <!--PORTFOLIO SECTION-->
-    <section class="portfolio">
+    <!-- CALL TO ACTION SECTION -->
+    <section class="custom-cta-section">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h4 class="cta-title">Call To Action</h4>
+              <p class="cta-text">Book a free consultation today, and let’s create something extraordinary together.</p>
+            </div>
+            <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+              <a href="#" class="cta-button">Call To Action</a>
+            </div>
+          </div>
+        </div>
+    </section>
+  
+    <!--REVIEW SECTION--> 
+    <section class="review py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4">Hear From Our Clients</h2>
+        <div class="scroll-container px-2">
 
+          <!-- Card 1 -->
+          <div class="review-card">
+            <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Rachel M" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">Rachel M</h6>
+                  <small class="text-muted">2025/01/01</small>
+                </div>
+              </div>
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-muted">
+                I was a nervous bride with a vintage gown that needed major alterations. The team listened to my vision, preserved the delicate lace, and made it fit like it was made for me.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="review-card">
+            <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Michael K" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">Michael K</h6>
+                  <small class="text-muted">2025/01/05</small>
+                </div>
+              </div>
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-muted">
+                I wanted a suit that stood out for my wedding, and Few Tailoring nailed it! The attention to detail was incredible.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="review-card">
+            <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Priya S" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">Priya S</h6>
+                  <small class="text-muted">2025/01/09</small>
+                </div>
+              </div>
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-muted">
+                They’ve hemmed my work pants, fixed my kids’ backpack zippers, and tailored my jacket. Fast and friendly.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="review-card">
+            <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="David R" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">David R</h6>
+                  <small class="text-muted">2025/01/14</small>
+                </div>
+              </div>
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-muted">
+                My grandfather’s 1940s coat was restored beautifully. Now it’s a family heirloom again.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="review-card">
+            <div class="card p-3 shadow-sm">
+              <div class="d-flex align-items-center mb-3">
+                <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Sarah L" class="rounded-circle me-3" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">Sarah L</h6>
+                  <small class="text-muted">2025/01/20</small>
+                </div>
+              </div>
+              <div class="mb-2 text-warning">★★★★★</div>
+              <p class="text-muted">
+                Our company ordered 20+ custom blazers and they handled fittings and delivery perfectly.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
     <!--FEATURE BLOG POST SECTION-->
-    <section class="blog">
-        <h2></h2>
-        <section>
-            <div>
-                <img src="#" alt="blog post image">
-                <p>5 Tips for Choosing the Perfect Fabric for Your Custom Garments</p>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Our Latest Blog Posts</h2>
+        <div class="row g-4">
+      
+          <!-- Blog Post 1 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="resources/tailor.jpg" class="card-img-top" alt="blog post image">
+              <div class="card-body">
+                <p class="text-primary fw-bold mb-2">Fashion Tips</p>
+                <h5 class="card-title">5 Tips for Choosing the Perfect Fabric for Your Custom Garments</h5>
+              </div>
+              <div class="card-footer d-flex align-items-center">
+                <img src="resources/tailor.jpg" class="rounded-circle me-2" alt="author image" width="40" height="40">
                 <div>
-                    <img src="#" alt="author image">
-                    <div>
-                        <p>Name</p>
-                        <p>2025/01/01</p>
-                    </div>
+                  <p class="mb-0 fw-bold">Name</p>
+                  <small class="text-muted">2025/01/01</small>
                 </div>
+              </div>
             </div>
-
-            <div>
-                <img src="#" alt="">
-                <p>How to Care for Your Tailored Clothing: A Complete Guide</p>
+          </div>
+      
+          <!-- Blog Post 2 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="resources/tailor.jpg" class="card-img-top" alt="blog post image">
+              <div class="card-body">
+                <p class="text-success fw-bold mb-2">Garment Care</p>
+                <h5 class="card-title">How to Care for Your Tailored Clothing: A Complete Guide</h5>
+              </div>
+              <div class="card-footer d-flex align-items-center">
+                <img src="resources/tailor.jpg" class="rounded-circle me-2" alt="author image" width="40" height="40">
                 <div>
-                    <img src="#" alt="author image">
-                    <div>
-                        <p>Name</p>
-                        <p>2025/01/05</p>
-                    </div>
+                  <p class="mb-0 fw-bold">Name</p>
+                  <small class="text-muted">2025/01/05</small>
                 </div>
+              </div>
             </div>
-
-            <div>
-                <img src="#" alt="">
-                <p>The Ultimate Guide to Alterations: What You Need to Know</p>
+          </div>
+      
+          <!-- Blog Post 3 -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="resources/tailor.jpg" class="card-img-top" alt="blog post image">
+              <div class="card-body">
+                <p class="text-danger fw-bold mb-2">Alterations</p>
+                <h5 class="card-title">The Ultimate Guide to Alterations: What You Need to Know</h5>
+              </div>
+              <div class="card-footer d-flex align-items-center">
+                <img src="resources/tailor.jpg" class="rounded-circle me-2" alt="author image" width="40" height="40">
                 <div>
-                    <img src="#" alt="author image">
-                    <div>
-                        <p>Name</p>
-                        <p>2025/01/10</p>
-                    </div>
+                  <p class="mb-0 fw-bold">Name</p>
+                  <small class="text-muted">2025/01/10</small>
                 </div>
+              </div>
             </div>
-        </section>
-
-        <button>More</button>
+          </div>
+      
+        </div>
+      
+        <!-- More Button -->
+        <div class="text-center mt-4">
+          <a href="#" class="btn btn-outline-primary">More</a>
+        </div>
     </section>
 
     <!--CONTACT US SECTION-->
-    <section class="contact">
-        <h2>Contact Us</h2>
-        <section>
-            <ul>
-                <li>
-                    <img src="#" alt="">
-                    <div>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </li>
-                <li>
-                    <img src="#" alt="">
-                    <div>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </li>
-                <li>
-                    <img src="#" alt="">
-                    <div>
-                        <p></p>
-                        <p></p>
-                    </div>
-                </li>
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Contact Us</h2>
+        <div class="row g-4">
+      
+          <!-- Contact Info -->
+          <div class="col-md-4">
+            <ul class="list-unstyled">
+              <li class="d-flex align-items-start mb-4">
+                <img src="resources/20250415_1227_Catfish in Sea_simple_compose_01jrw3rp1efxytt1cv7sfkz9p1.png" alt="Address Icon" class="me-3" width="30">
+                <div>
+                  <p class="fw-bold mb-1">Address</p>
+                  <p class="text-muted">A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-4">
+                <img src="resources/20250415_1227_Catfish in Sea_simple_compose_01jrw3rp1efxytt1cv7sfkz9p1.png" alt="Call Icon" class="me-3" width="30">
+                <div>
+                  <p class="fw-bold mb-1">Call Us</p>
+                  <p class="text-muted">+1 5589 55488 55</p>
+                </div>
+              </li>
+              <li class="d-flex align-items-start mb-4">
+                <img src="resources/20250415_1227_Catfish in Sea_simple_compose_01jrw3rp1efxytt1cv7sfkz9p1.png" alt="Email Icon" class="me-3" width="30">
+                <div>
+                  <p class="fw-bold mb-1">Email Us</p>
+                  <p class="text-muted">info@example.com</p>
+                </div>
+              </li>
             </ul>
-
+          </div>
+      
+          <!-- Contact Form -->
+          <div class="col-md-8">
             <form>
-                <input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Your Email">
-                <input type="text" placeholder="Subject">
-                <input type="text" placeholder="Message">
-                <button>Send Message</button>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="col-12">
+                  <input type="text" class="form-control" placeholder="Subject" required>
+                </div>
+                <div class="col-12">
+                  <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-warning text-white px-4 py-2">Send Message</button>
+                </div>
+              </div>
             </form>
-        </section>
+          </div>
+      
+        </div>
     </section>
 
     <!--FOOTER SECTION-->
     <footer>
-        <section class="info">
-
-            <div alt="contact">
-                <h3>Few Tailoring</h3>
-                <address></address>  
-                <p>Phone: [Phone Number]</p> 
-                <p>Email: [Email Address]</p>
-                <p>Hours: Mon–Fri: 9 AM – 7 PM | Sat: 10 AM – 5 PM | Closed Sundays</p>
-                <ul>
-                    <li><a href="#"><img src="#" alt=""></a></li>
-                    <li><a href="#"><img src="#" alt=""></a></li>
-                    <li><a href="#"><img src="#" alt=""></a></li>
-                    <li><a href="#"><img src="#" alt=""></a></li>
-                </ul>  
-            </div>
-
-            <div alt="sections">
-                <h3>Sections</h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div alt="services">
-                <h3>Services</h3>
-                <ul>
-                    <li><a href="#">Custom Tailoring</a></li>
-                    <li><a href="#">Alteration & Repairs</a></li>
-                    <li><a href="#">Wedding & Special Occasions</a></li>
-                    <li><a href="#">Fabric Sourcing & Design Consultation</a></li>
-                </ul>
-            </div>
-
-            <div alt="newsletter">
-                <h3>Our Newsletter</h3>
-                <p>Join Our Newsletter for Tailoring Tips & Exclusive Offers!</p>
-                <form>
-                    <input type="text">
-                    <button>Subscribe</button>
-                </form>
+        <section class="bg-dark text-white py-5">
+            <div class="container">
+              <div class="row g-4">
+          
+                <!-- Contact Info -->
+                <div class="col-md-3">
+                  <h4>Few Tailoring</h4>
+                  <address class="mb-2">A108 Adam Street, New York, NY 535022</address>
+                  <p><strong>Phone:</strong> +1 5589 55488 55</p>
+                  <p><strong>Email:</strong> info@example.com</p>
+                  <p><strong>Hours:</strong> Mon–Fri: 9 AM – 7 PM<br>Sat: 10 AM – 5 PM<br>Closed Sundays</p>
+                  <div class="d-flex gap-2 mt-3">
+                    <a href="#"><img src="#" alt="Facebook" width="30"></a>
+                    <a href="#"><img src="#" alt="Instagram" width="30"></a>
+                    <a href="#"><img src="#" alt="Twitter" width="30"></a>
+                    <a href="#"><img src="#" alt="LinkedIn" width="30"></a>
+                  </div>
+                </div>
+          
+                <!-- Sections -->
+                <div class="col-md-3">
+                  <h5>Sections</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Portfolio</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Services -->
+                <div class="col-md-3">
+                  <h5>Services</h5>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Custom Tailoring</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Alteration & Repairs</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Wedding & Special Occasions</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Fabric Sourcing & Design Consultation</a></li>
+                  </ul>
+                </div>
+          
+                <!-- Newsletter -->
+                <div class="col-md-3">
+                  <h5>Our Newsletter</h5>
+                  <p class="text-white-50">Join Our Newsletter for Tailoring Tips & Exclusive Offers!</p>
+                  <form class="d-flex">
+                    <input type="email" class="form-control me-2" placeholder="Your Email">
+                    <button type="submit" class="btn btn-warning text-white">Subscribe</button>
+                  </form>
+                </div>
+          
+              </div>
             </div>
         </section>
-
-        <section class="copyright">
-            <p>&copy; 2025 Few Tailoring – All Rights Reserved</p>
+        <hr style="height: 1px; margin: 0;">
+        <section class="bg-dark text-center text-white py-3">
+            <p class="mb-0">&copy; 2025 Few Tailoring – All Rights Reserved</p>
         </section>
     </footer>
-    
+
 
     <!--BOOTSTRAP JS FILE-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
