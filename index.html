@@ -9,14 +9,28 @@
       body {
         font-family: Arial, sans-serif;
       }
+      h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
       .sm-text {font-size: 14px;}
       .m-text {font-size: 16px;}
-        .custom-cta-section {
-            background-color: #1f2235; /* Dark background */
-            color: #ffffff;
-            padding: 60px 0;
+      .lm-text {font-size: 18px;}
+        
+
+        /*Contact US*/
+        .contact-us {
+          background-color: #a3862f1e;
+          border-radius: 10px;
+          border: 1px solid #ffc107
+        }
+        .contact-us input{
+          border-radius: 5px;
+          border: 1px solid #ffc107
+        }
+        .contact-us textarea{
+          border-radius: 5px;
+          border: 1px solid #ffc107
         }
 
+        /*Footer*/
         .footer-link:hover {color: #fff;}
 
         .cta-title {
@@ -28,6 +42,12 @@
           margin: 0;
           font-size: 16px;
           line-height: 1.6;
+        }
+
+        .custom-cta-section {
+            background-color: #1f2235;
+            color: #ffffff;
+            padding: 60px 0;
         }
 
         .cta-button {
@@ -410,7 +430,7 @@
     </section>
 
     <!--CONTACT US SECTION-->
-    <section class="container my-5">
+    <section class="container my-5 p-4 contact-us">
         <h2 class="text-center mb-4">Contact Us</h2>
         <div class="row g-4">
       
@@ -418,24 +438,24 @@
           <div class="col-md-4">
             <ul class="list-unstyled">
               <li class="d-flex align-items-start mb-4">
-                <img src="resources/20250415_1227_Catfish in Sea_simple_compose_01jrw3rp1efxytt1cv7sfkz9p1.png" alt="Address Icon" class="me-3" width="30">
+                <img src="resources/Home/Contact Us/address.png" alt="Address Icon" class="me-3" width="30">
                 <div>
-                  <p class="fw-bold mb-1">Address</p>
-                  <p class="text-muted">A108 Adam Street, New York, NY 535022</p>
+                  <p class="fw-bold mb-1 lm-text">Address</p>
+                  <p class="text-muted m-text">A108 Adam Street, New York, NY 535022</p>
                 </div>
               </li>
               <li class="d-flex align-items-start mb-4">
-                <img src="resources/20250415_1227_Catfish in Sea_simple_compose_01jrw3rp1efxytt1cv7sfkz9p1.png" alt="Call Icon" class="me-3" width="30">
+                <img src="resources/Home/Contact Us/call.png" alt="Call Icon" class="me-3" width="30">
                 <div>
-                  <p class="fw-bold mb-1">Call Us</p>
-                  <p class="text-muted">+1 5589 55488 55</p>
+                  <p class="fw-bold mb-1 lm-text">Call Us</p>
+                  <p class="text-muted m-text">+1 5589 55488 55</p>
                 </div>
               </li>
               <li class="d-flex align-items-start mb-4">
-                <img src="resources/20250415_1227_Catfish in Sea_simple_compose_01jrw3rp1efxytt1cv7sfkz9p1.png" alt="Email Icon" class="me-3" width="30">
+                <img src="resources/Home/Contact Us/email.png" alt="Email Icon" class="me-3" width="30">
                 <div>
-                  <p class="fw-bold mb-1">Email Us</p>
-                  <p class="text-muted">info@example.com</p>
+                  <p class="fw-bold mb-1 lm-text">Email Us</p>
+                  <p class="text-muted m-text">info@example.com</p>
                 </div>
               </li>
             </ul>
@@ -446,19 +466,19 @@
             <form>
               <div class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="Your Name" required>
+                  <input type="text" class="form-control m-text" placeholder="Your Name" required>
                 </div>
                 <div class="col-md-6">
-                  <input type="email" class="form-control" placeholder="Your Email" required>
+                  <input type="email" class="form-control m-text" placeholder="Your Email" required>
                 </div>
                 <div class="col-12">
-                  <input type="text" class="form-control" placeholder="Subject" required>
+                  <input type="text" class="form-control m-text" placeholder="Subject" required>
                 </div>
                 <div class="col-12">
-                  <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                  <textarea class="form-control m-text" rows="5" placeholder="Message" required></textarea>
                 </div>
                 <div class="col-12 text-end">
-                  <button type="submit" class="btn btn-warning text-white px-4 py-2">Send Message</button>
+                  <button type="submit" class="btn btn-warning text-white px-4 py-2 m-text">Send Message</button>
                 </div>
               </div>
             </form>
@@ -527,6 +547,7 @@
         </section>
 
         <hr style="height: 1px; margin: 0;">
+
         <section class="bg-dark text-center text-white py-3"  style="font-size: 12px;">
             <p class="mb-0">&copy; 2025 Few Tailoring – All Rights Reserved</p>
         </section>
