@@ -6,11 +6,18 @@
     <title>Few Tailoring</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .sm-text {font-size: 14px;}
+      .m-text {font-size: 16px;}
         .custom-cta-section {
             background-color: #1f2235; /* Dark background */
             color: #ffffff;
             padding: 60px 0;
         }
+
+        .footer-link:hover {color: #fff;}
 
         .cta-title {
           font-weight: 700;
@@ -51,7 +58,7 @@
     margin-right: 1rem;
     scroll-snap-align: start;
     vertical-align: top;
-    white-space: normal; /* ✅ allow text wrapping */
+    white-space: normal; /* allow text wrapping */
   }
 
   .card {
@@ -462,64 +469,65 @@
 
     <!--FOOTER SECTION-->
     <footer>
-        <section class="bg-dark text-white py-5">
+        <section class="bg-dark text-white py-5" style="height: 38vh;">
             <div class="container">
               <div class="row g-4">
           
                 <!-- Contact Info -->
                 <div class="col-md-3">
                   <h4>Few Tailoring</h4>
-                  <address class="mb-2">A108 Adam Street, New York, NY 535022</address>
-                  <p><strong>Phone:</strong> +1 5589 55488 55</p>
-                  <p><strong>Email:</strong> info@example.com</p>
-                  <p><strong>Hours:</strong> Mon–Fri: 9 AM – 7 PM<br>Sat: 10 AM – 5 PM<br>Closed Sundays</p>
-                  <div class="d-flex gap-2 mt-3">
-                    <a href="#"><img src="#" alt="Facebook" width="30"></a>
-                    <a href="#"><img src="#" alt="Instagram" width="30"></a>
-                    <a href="#"><img src="#" alt="Twitter" width="30"></a>
-                    <a href="#"><img src="#" alt="LinkedIn" width="30"></a>
-                  </div>
+                  <address class="mb-2 sm-text">A108 Adam Street, New York, NY 535022</address>
+                  <p class="sm-text"><strong>Phone:</strong> +1 5589 55488 55</p>
+                  <p class="sm-text"><strong>Email:</strong> info@example.com</p>
+                  <p class="sm-text"><strong>Hours:</strong>&nbsp;Mon–Fri: 9 AM – 7 PM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat: 10 AM – 5 PM<br>Closed Sundays</p>
                 </div>
           
                 <!-- Sections -->
                 <div class="col-md-3">
-                  <h5>Sections</h5>
-                  <ul class="list-unstyled">
-                    <li><a href="#" class="text-white-50 text-decoration-none">Home</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">About</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Services</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Portfolio</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Blog</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Contact Us</a></li>
+                  <h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sections</h5>
+                  <ul class="list-unstyled sm-text">
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Services</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portfolio</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Blog</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact Us</a></li>
                   </ul>
                 </div>
           
                 <!-- Services -->
                 <div class="col-md-3">
                   <h5>Services</h5>
-                  <ul class="list-unstyled">
-                    <li><a href="#" class="text-white-50 text-decoration-none">Custom Tailoring</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Alteration & Repairs</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Wedding & Special Occasions</a></li>
-                    <li><a href="#" class="text-white-50 text-decoration-none">Fabric Sourcing & Design Consultation</a></li>
+                  <ul class="list-unstyled sm-text">
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Custom Tailoring</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Alteration & Repairs</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Wedding & Special Occasions</a></li>
+                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Fabric Sourcing & Design Consultation</a></li>
                   </ul>
                 </div>
           
                 <!-- Newsletter -->
                 <div class="col-md-3">
                   <h5>Our Newsletter</h5>
-                  <p class="text-white-50">Join Our Newsletter for Tailoring Tips & Exclusive Offers!</p>
+                  <p class="text-white-50 sm-text">Join Our Newsletter for Tailoring Tips & Exclusive Offers!</p>
                   <form class="d-flex">
-                    <input type="email" class="form-control me-2" placeholder="Your Email">
-                    <button type="submit" class="btn btn-warning text-white">Subscribe</button>
+                    <input type="email" class="form-control me-2 sm-text" placeholder="Your Email">
+                    <button type="submit" class="btn btn-warning text-white sm-text">Subscribe</button>
                   </form>
+                  <div class="d-flex gap-2 sm-text justify-content-left">
+                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/fb.png" alt="Facebook" width="40"></a>
+                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/insta.png" alt="Instagram" width="40"></a>
+                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/twitte.png" alt="Twitter" width="40"></a>
+                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/linkedin.png" alt="LinkedIn" width="40"></a>
+                  </div>
                 </div>
-          
+        
               </div>
             </div>
         </section>
+
         <hr style="height: 1px; margin: 0;">
-        <section class="bg-dark text-center text-white py-3">
+        <section class="bg-dark text-center text-white py-3"  style="font-size: 12px;">
             <p class="mb-0">&copy; 2025 Few Tailoring – All Rights Reserved</p>
         </section>
     </footer>
