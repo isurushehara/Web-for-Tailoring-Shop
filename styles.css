@@ -6,7 +6,28 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .sm-text {font-size: 14px;}
 .m-text {font-size: 16px;}
 .lm-text {font-size: 18px;}
+.p-center {text-align: center;}
+.text-gold {color: #d8a200;}
    
+/*Why*/
+.why-box {
+    margin: 10px 35px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #ffc30e83;
+}
+.why-box:hover {
+    box-shadow: 0px 0px 5px #ffc30eb6;
+    cursor: pointer;
+}
+.why-icon {
+    font-size: 30px;
+}
+
+
+/*About*/
+.about div .about-left {
+    background-color: #ecb100;
+}
 
 /*Statistics*/
 .static {
