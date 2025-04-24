@@ -7,6 +7,47 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .m-text {font-size: 16px;}
 .lm-text {font-size: 18px;}
     
+
+/*Review*/
+.review-card {
+    display: inline-block;
+    width: 27vw;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+    vertical-align: top;
+    white-space: normal;
+    border-radius: 5px;
+    border: 1px solid #ffc518;
+}
+.review-card:hover {
+    cursor: pointer;
+    border: 1px solid #ffc107;
+    box-shadow: 0 0 5px #ffc107;
+}
+
+.card {
+    height: 33vh;
+}
+
+.scroll-container::-webkit-scrollbar {  
+    height: 8px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #ffc107;
+    border-radius: 4px;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+.scroll-container::after {
+    content: "";
+    display: inline-block;
+    width: 1rem;
+}
+
 /*Blog*/
 .blog-card{
     border-radius: 5px;
@@ -70,39 +111,4 @@ overflow-x: auto;
 white-space: nowrap;
 scroll-snap-type: x mandatory;
 -webkit-overflow-scrolling: touch;
-}
-
-
-
-/**/
-.review-card {
-display: inline-block;
-width: 27vw;
-margin-right: 1rem;
-scroll-snap-align: start;
-vertical-align: top;
-white-space: normal; /* allow text wrapping */
-}
-
-.card {
-height: 33vh;
-}
-
-.scroll-container::-webkit-scrollbar {
-height: 8px;
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-background-color: #ccc;
-border-radius: 4px;
-}
-
-.card p {
-margin-bottom: 0.5rem;
-}
-
-.scroll-container::after {
-content: "";
-display: inline-block;
-width: 1rem;
 }
