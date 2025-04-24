@@ -9,6 +9,56 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .p-center {text-align: center;}
 .text-gold {color: #d8a200;}
    
+/*Service*/
+.service-box {
+    position: relative;
+    overflow: hidden;
+    background-image: url(resources/tailor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px ;
+    border-radius: 50%;
+    color:#fff;
+}
+.service-box p {
+    color: #fff;
+    filter: 1;
+}
+.service-box-center {
+    position: relative;
+    overflow: hidden;
+    background-image: url(resources/tailor.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:150px 0px ;
+    border-radius: 50%;
+    margin:0 20px;
+    color:#fff;
+}
+.service-box::before,
+.service-box-center::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* adjust the 0.4 for darker/lighter */
+    z-index: 0;
+}
+.service-box > *,
+.service-box-center > * {
+    position: relative;
+    z-index: 1;
+}
+.service-box:hover,
+.service-box-center:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 /*Why*/
 .why-box {
     margin: 10px 35px;
@@ -22,7 +72,6 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .why-icon {
     font-size: 30px;
 }
-
 
 /*About*/
 .about div .about-left {
