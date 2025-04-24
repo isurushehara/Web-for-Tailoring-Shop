@@ -6,7 +6,31 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .sm-text {font-size: 14px;}
 .m-text {font-size: 16px;}
 .lm-text {font-size: 18px;}
-    
+   
+/*CTA*/
+.cta-text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.custom-cta-section {
+    background-color: #1f2235;
+    color: #ffffff;
+    padding: 60px 0;
+}
+.cta-button {
+    display: inline-block;
+    background-color: #ffc107;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+    background-color: #ffd147;
+}
 
 /*Review*/
 .review-card {
@@ -36,6 +60,13 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .scroll-container::-webkit-scrollbar-thumb {
     background-color: #ffc107;
     border-radius: 4px;
+}
+
+.scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
 }
 
 .card p {
@@ -76,39 +107,13 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
   border-radius: 5px;
   border: 1px solid #ffc107
 }
+
 /*Footer*/
 .footer-link:hover {color: #fff;}
 .cta-title {
   font-weight: 700;
   margin-bottom: 10px;
 }
-.cta-text {
-  margin: 0;
-  font-size: 16px;
-  line-height: 1.6;
-}
-.custom-cta-section {
-    background-color: #1f2235;
-    color: #ffffff;
-    padding: 60px 0;
-}
-.cta-button {
-  display: inline-block;
-  background-color: #ff6a00;
-  color: #fff;
-  padding: 12px 24px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-.cta-button:hover {
-  background-color: #e55d00;
-    }
 
-.scroll-container {
-overflow-x: auto;
-white-space: nowrap;
-scroll-snap-type: x mandatory;
--webkit-overflow-scrolling: touch;
-}
+
+
