@@ -7,6 +7,18 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .m-text {font-size: 16px;}
 .lm-text {font-size: 18px;}
    
+
+/*Statistics*/
+.static {
+    text-align: center;
+}
+.custom-static-section {
+    background-color: #1f2235;
+    color: #ffffff;
+    padding: 40px 0;
+    margin: 20px 0;
+}
+
 /*CTA*/
 .cta-text {
     margin: 0;
