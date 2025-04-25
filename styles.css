@@ -1,19 +1,130 @@
 body {
-
     font-family: Arial, sans-serif;
-  }
+}
 h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
 .sm-text {font-size: 14px;}
 .m-text {font-size: 16px;}
 .lm-text {font-size: 18px;}
 .p-center {text-align: center;}
 .text-gold {color: #d8a200;}
+
+.top-button-box {
+    width: 5vw;
+    margin-left: 92vw;
+    margin-bottom: 4vh;
+}
+.top-button {
+    width: 4vw;
+    height: 8vh;
+    background-color: #ffc107;
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+}
+.top-button:hover {
+    background-color: #ffc10722;
+}
+
    
+/* Navbar background */
+nav {
+    transition: background-color 0.5s ease-in-out; /* Smooth transition */
+    z-index: 999;
+}
+.login:hover {background-color:#ffc107;}
+.hero-content ,h1,h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff8e3;
+}
+.hero-button {
+    background-color: #ffc107d5;
+    border: 1px solid #ffc107;
+    color: #fcfcfc;
+}
+.hero-button:hover {
+    background-color: #ffc107;
+}
+.hero-button-right {
+    background-color: #ffc1072b;
+    border: 1px solid #ffc107;
+    color: #fff;
+}
+.hero-button-right:hover {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+/* Brand styling */
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  font-size: 24px;
+}
+.navbar-brand:hover {
+  color: #ffc107;
+}
+/* Nav links */
+.nav-link {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 8px 16px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Hover effect */
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffc107;
+    }
+
+    /* Active link */
+    .nav-link.active {
+      background-color: #ffc107;
+      color: white !important;
+      font-weight: 500;
+    }
+  
+      /* Login button */
+      .navbar .btn {
+        margin-top: 5px;
+        margin-left: 20px;
+        border-radius: 30px;
+        padding: 6px 20px;
+        background-color: #ff6f00;
+        border: none;
+      }
+  
+      /* Smooth scroll */
+      html {
+        scroll-behavior: smooth;
+      }
+
+
+
+
+/*Hero*/
+.hero{
+    background-image: url('resources/Home/hero.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
 /*Service*/
-.service-box {
+.service-box-right {
     position: relative;
     overflow: hidden;
-    background-image: url(resources/tailor.jpg);
+    background-image: url(resources/Home/Servies/Wedding.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px ;
+    border-radius: 50%;
+    color:#fff;
+}
+.service-box-left {
+    position: relative;
+    overflow: hidden;
+    background-image: url(resources/Home/Servies/Alterations\ &\ Repairs.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,7 +139,7 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
 .service-box-center {
     position: relative;
     overflow: hidden;
-    background-image: url(resources/tailor.jpg);
+    background-image: url(resources/Home/Servies/Custom.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,7 +156,7 @@ h2,h3,h4,h5,h6 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grand
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.4); /* adjust the 0.4 for darker/lighter */
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
 .service-box > *,

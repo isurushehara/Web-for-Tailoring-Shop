@@ -10,50 +10,48 @@
 <body>
 
     <!--HEADER SECTION-->
-    <header class="" style="height: 100vh;">
+    <header id="header" class="" style="height: 100vh;">
         <!--NAVIGATION BAR SECTION-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 7vh;">
-            <div class="container-fluid">  
-                <a class="navbar-brand" href="#">Few Tailoring</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-5 mt-0 ms-auto mb-5 mb-lg-0">
-                        <li class="nav-item pt-0 mx-3">
-                            <a class="nav-link active" aria-current="page" href="#header">Home</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="service/index.html">Services</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="portfolio/index.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="blog/index.html">Blog</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link" href="#contact">Contact Us</a>
-                        </li>
-                    </ul>
-                <div class="nav-item mt-4 m-3"></div>
-                <a class="btn btn-primary" href="#">Login</a>
-                </div>
+        <nav id ="nav" class="navbar navbar-expand-lg fixed-top" style="height: 8vh;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">&nbsp;&nbsp;&nbsp;Few Tailoring</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav m-5 mt-0 ms-auto mb-5 mb-lg-0">
+                <li class="nav-item mx-3">
+                  <a class="nav-link active" href="#header">&nbsp;&nbsp;Home&nbsp;&nbsp;</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#about">&nbsp;&nbsp;About&nbsp;&nbsp;</a>
+                </li>
+                <li class="nav-item mx-3" href="service/index.html">
+                  <a class="nav-link" href="#services">&nbsp;Services&nbsp;</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#blog">&nbsp;&nbsp;Blog&nbsp;&nbsp;</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+              </ul>
+              <a class="btn btn-primary bg-warning login" href="#">Login</a>
             </div>
+          </div>
         </nav>
     
         <!--HERO SECTION-->
-        <div class="p-5 text-center bg-image" style="background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp'); height: 93vh;">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
-                <div class="d-flex justify-content-center align-items-center" style="height: 80vh;">
-                    <div class="text-white">
+        <div id="hero" class="text-center bg-image hero">
+            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 100vh; margin: 0;">
+                <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+                    <div class="text-white hero-content">
                         <h1 class="mb-3">Crafting Perfect Fits, One Stitch at a Time</h1>
                         <h4 class="mb-3">Bespoke Tailoring & Alterations for Every Occasion – Timeless Style, Tailored Just for You.</h4>
-                        <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Book a Free Consultation</a>
-                        <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Explore Our Services</a>
+                        <a class="btn btn-lg hero-button" href="#" role="button">Book a Free Consultation</a><span>&nbsp;&nbsp;</span>
+                        <a class="btn btn-lg hero-button-right" href="#header" role="button">Explore Our Services</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +59,7 @@
     </header>
 
     <!-- ABOUT SECTION -->
-    <section class="about container py-5">
+    <section id="about" class="about container py-5">
         <!-- ABOUT US -->
         <div class="row justify-content-center align-items-center">
             <div class="col-lg-6 col-md-12 px-4 py-3">
@@ -75,6 +73,10 @@
             </div>
         </div>
     </section>
+
+    <div class="fixed-bottom top-button-box">
+      <a class="nav-link top-button" href="#header">Top</a>
+    </div>
 
         <!-- ABOUT STATISTICS -->
         <section class="custom-static-section">
@@ -135,11 +137,11 @@
     </section>
 
     <!-- SERVICES SECTION -->
-    <section class="services container py-5 text-center">
+    <section id="services" class="services container py-5 text-center">
         <h2>What We Offer</h2>
         <p>Precision Tailoring for Every Need – From Everyday Wear to Once-in-a-Lifetime</p>
         <div class="row justify-content-center align-items-center mt-5">
-            <div class="col-md-3 col-sm-6 mb-4 h-50 service-box">
+            <div class="col-md-3 col-sm-6 mb-4 h-50 service-box service-box-left">
               <h5>Alterations & Repairs</h5>
               <p>Revive Your Wardrobe, Perfect Your Fit</p>
               <button class="btn btn-warning text-white px-4 py-2 m-text">Get a Quote</button>
@@ -149,7 +151,7 @@
               <p>Bespoke Garments, Designed for You</p>
               <button class="btn btn-warning text-white px-4 py-2 m-text">Start Your Custom Design</button>
             </div>
-            <div class="col-md-3 col-sm-6 mb-4 h-50 service-box">
+            <div class="col-md-3 col-sm-6 mb-4 h-50 service-box service-box-right">
               <h5>Wedding & Special Occasions</h5>
               <p>Your Big Day, Perfectly Stitched</p>
               <button class="btn btn-warning text-white px-4 py-2 m-text">Plan Your Perfect Look</button>
@@ -278,14 +280,14 @@
     </section>
 
     <!--FEATURE BLOG POST SECTION-->
-    <section class="container my-5">
+    <section id="blog" class="container my-5">
         <h2 class="text-center mb-4">Our Latest Blog Posts</h2>
         <div class="row g-4">
       
           <!-- Blog Post 1 -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm blog-card">
-              <img src="resources/tailor.jpg" class="card-img-top" alt="blog post image">
+              <img src="resources/Home/Blog/blog - fabric.jpg" class="card-img-top" alt="blog post image">
               <div class="card-body blog-card-bottom">
                 <p class="text-warning fw-bold mb-2">Fashion Tips</p>
                 <h5 class="card-title">5 Tips for Choosing the Perfect Fabric for Your Custom Garments</h5>
@@ -303,7 +305,7 @@
           <!-- Blog Post 2 -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm blog-card">
-              <img src="resources/tailor.jpg" class="card-img-top" alt="blog post image">
+              <img src="resources/Home/Blog/blog -tailor.jpg" class="card-img-top" alt="blog post image">
               <div class="card-body blog-card-bottom">
                 <p class="text-warning fw-bold mb-2">Garment Care</p>
                 <h5 class="card-title">How to Care for Your Tailored Clothing: A Complete Guide</h5>
@@ -321,7 +323,7 @@
           <!-- Blog Post 3 -->
           <div class="col-md-4">
             <div class="card h-100 shadow-sm blog-card">
-              <img src="resources/tailor.jpg" class="card-img-top" alt="blog post image">
+              <img src="resources/Home/Blog/blog needs.webp" class="card-img-top" alt="blog post image">
               <div class="card-body blog-card-bottom">
                 <p class="text-warning fw-bold mb-2">Alterations</p>
                 <h5 class="card-title">The Ultimate Guide to Alterations: What You Need to Know</h5>
@@ -346,7 +348,7 @@
 
     <!--CONTACT US SECTION-->
     <section class="container my-5 p-4 contact-us">
-        <h2 class="text-center mb-4">Contact Us</h2>
+        <h2 id="contact" class="text-center mb-4">Contact Us</h2>
         <div class="row g-4">
       
           <!-- Contact Info -->
@@ -468,6 +470,62 @@
         </section>
     </footer>
 
+    <script>
+      const sections = document.querySelectorAll("section");
+      const navLinks = document.querySelectorAll(".nav-link");
+    
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute("id");
+          }
+        });
+    
+        navLinks.forEach(link => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          navLinks.forEach(nav => nav.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+
+    </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const nav = document.querySelector("nav");
+    const header = document.querySelector("header");
+
+    function updateNavbarColor() {
+      const headerBottom = header.offsetTop + header.offsetHeight;
+      const scrollY = window.scrollY;
+
+      if (scrollY >= headerBottom) {
+        nav.style.backgroundColor = "#1f2235";
+      } else {
+        nav.style.backgroundColor = "#1f223500";
+      }
+    }
+
+    // Run once on load
+    updateNavbarColor();
+
+    // Run on scroll
+    window.addEventListener("scroll", updateNavbarColor);
+  });
+</script>
+
+
+    
 
     <!--BOOTSTRAP JS FILE-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
