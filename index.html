@@ -1,200 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Few Tailoring</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- HEADER SECTION -->
+    <header id="header" class="" style="height: 100vh">
+      <!--NAVIGATION BAR SECTION-->
+      <nav
+        id="nav"
+        class="navbar navbar-expand-lg fixed-top"
+        style="height: 8vh"
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="index.html"
+            style="
+              font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+                'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            "
+            >&nbsp;&nbsp;&nbsp;Few Tailoring</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-5 mt-0 ms-auto mb-5 mb-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link active" href="#header"
+                  >&nbsp;&nbsp;Home&nbsp;&nbsp;</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#about"
+                  >&nbsp;&nbsp;About&nbsp;&nbsp;</a
+                >
+              </li>
+              <li class="nav-item mx-3" href="service/index.html">
+                <a class="nav-link" href="#services">&nbsp;Services&nbsp;</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#blog"
+                  >&nbsp;&nbsp;Blog&nbsp;&nbsp;</a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+            </ul>
+            <a class="btn btn-primary bg-warning login" href="#">Login</a>
+          </div>
+        </div>
+      </nav>
 
-    <!--HEADER SECTION-->
-    <header id="header" class="" style="height: 100vh;">
-        <!--NAVIGATION BAR SECTION-->
-        <nav id ="nav" class="navbar navbar-expand-lg fixed-top" style="height: 8vh;">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="index.html" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">&nbsp;&nbsp;&nbsp;Few Tailoring</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-5 mt-0 ms-auto mb-5 mb-lg-0">
-                <li class="nav-item mx-3">
-                  <a class="nav-link active" href="#header">&nbsp;&nbsp;Home&nbsp;&nbsp;</a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a class="nav-link" href="#about">&nbsp;&nbsp;About&nbsp;&nbsp;</a>
-                </li>
-                <li class="nav-item mx-3" href="service/index.html">
-                  <a class="nav-link" href="#services">&nbsp;Services&nbsp;</a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a class="nav-link" href="#blog">&nbsp;&nbsp;Blog&nbsp;&nbsp;</a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a class="nav-link" href="#contact">Contact Us</a>
-                </li>
-              </ul>
-              <a class="btn btn-primary bg-warning login" href="#">Login</a>
+      <!--HERO SECTION-->
+      <div id="hero" class="text-center bg-image hero">
+        <div
+          class="mask"
+          style="background-color: rgba(0, 0, 0, 0.6); height: 100vh; margin: 0"
+        >
+          <div
+            class="d-flex justify-content-center align-items-center"
+            style="height: 100vh"
+          >
+            <div class="text-white hero-content">
+              <h1 class="mb-3">Crafting Perfect Fits, One Stitch at a Time</h1>
+              <h4 class="mb-3">
+                Bespoke Tailoring & Alterations for Every Occasion – Timeless
+                Style, Tailored Just for You.
+              </h4>
+              <a class="btn btn-lg hero-button" href="#" role="button"
+                >Book a Free Consultation</a
+              ><span>&nbsp;&nbsp;</span>
+              <a
+                class="btn btn-lg hero-button-right"
+                href="#header"
+                role="button"
+                >Explore Our Services</a
+              >
             </div>
           </div>
-        </nav>
-    
-        <!--HERO SECTION-->
-        <div id="hero" class="text-center bg-image hero">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 100vh; margin: 0;">
-                <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-                    <div class="text-white hero-content">
-                        <h1 class="mb-3">Crafting Perfect Fits, One Stitch at a Time</h1>
-                        <h4 class="mb-3">Bespoke Tailoring & Alterations for Every Occasion – Timeless Style, Tailored Just for You.</h4>
-                        <a class="btn btn-lg hero-button" href="#" role="button">Book a Free Consultation</a><span>&nbsp;&nbsp;</span>
-                        <a class="btn btn-lg hero-button-right" href="#header" role="button">Explore Our Services</a>
-                    </div>
-                </div>
-            </div>
         </div>
+      </div>
     </header>
 
     <!-- ABOUT SECTION -->
     <section id="about" class="about container py-5">
-        <!-- ABOUT US -->
-        <div class="row justify-content-center align-items-center">
-            <div class="col-lg-6 col-md-12 px-4 py-3">
-                <h2 style="text-align: center;">Your Trusted Tailor in Nuwara Eliya</h2>
-                <p class="mt-3" style="text-align: center;">
-                    At Few Tailoring, we blend decades of craftsmanship with modern elegance to create garments that reflect your unique style. Whether you need alterations, custom tailoring, or bridal adjustments, we’re here to perfect every detail. Serving Nuwara Eliya since 2015, we take pride in turning fabric into art.
-                </p>
-            </div>
-            <div class="col-lg-5 col-md-12 px-4 py-3">
-                <img src="resources/Home/Blog/blog -tailor.jpg" class="img-fluid" alt="about us picture">
-            </div>
+      <!-- ABOUT US -->
+      <div class="row justify-content-center align-items-center">
+        <div class="col-lg-6 col-md-12 px-4 py-3">
+          <h2 style="text-align: center">
+            Your Trusted Tailor in Nuwara Eliya
+          </h2>
+          <p class="mt-3" style="text-align: center">
+            At Few Tailoring, we blend decades of craftsmanship with modern
+            elegance to create garments that reflect your unique style. Whether
+            you need alterations, custom tailoring, or bridal adjustments, we’re
+            here to perfect every detail. Serving Nuwara Eliya since 2015, we
+            take pride in turning fabric into art.
+          </p>
         </div>
+        <div class="col-lg-5 col-md-12 px-4 py-3">
+          <img
+            src="resources/Home/Blog/blog -tailor.jpg"
+            class="img-fluid"
+            alt="about us picture"
+          />
+        </div>
+      </div>
     </section>
 
+    <!-- TOP BUTTON -->
     <div class="fixed-bottom top-button-box">
       <a class="nav-link top-button" href="#header">Top</a>
     </div>
 
-        <!-- ABOUT STATISTICS -->
-        <section class="custom-static-section">
-            <div class="container">
-              <div class="row static">
-                <div class="col-md-3">
-                  <h4 class="cta-title">200+</h4>
-                  <p class="cta-text">Happy Customers</p>
-                </div>
-                <div class="col-md-3">
-                    <h4 class="cta-title">50+</h4>
-                    <p class="cta-text">Unique Products</p>
-                </div>
-                <div class="col-md-3">
-                    <h4 class="cta-title">100+</h4>
-                    <p class="cta-text">Custom Orders Completed</p>
-                </div>
-                <div class="col-md-3">
-                    <h4 class="cta-title">3+</h4>
-                    <p class="cta-text">Years of Service</p>
-                </div>
-              </div>
-            </div>
-        </section>
+    <!-- ABOUT STATISTICS -->
+    <section class="custom-static-section">
+      <div class="container">
+        <div class="row static">
+          <div class="col-md-3">
+            <h4 class="cta-title">200+</h4>
+            <p class="cta-text">Happy Customers</p>
+          </div>
+          <div class="col-md-3">
+            <h4 class="cta-title">50+</h4>
+            <p class="cta-text">Unique Products</p>
+          </div>
+          <div class="col-md-3">
+            <h4 class="cta-title">100+</h4>
+            <p class="cta-text">Custom Orders Completed</p>
+          </div>
+          <div class="col-md-3">
+            <h4 class="cta-title">3+</h4>
+            <p class="cta-text">Years of Service</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- WHY CHOOSE US -->
     <section class="about container py-5">
-        <div class="row justify-content-center align-items-center">
-            <div class="about-left col-lg-3 col-md-6 px-5 py-4 h-100">
-                <h2 class="text-light">Why Few Tailoring?</h2>
-                <p class="text-light mt-3" style="text-align: justify;">
-                    At Few Tailoring, we believe every stitch matters. Our mission is to deliver perfectly fitted, stylish garments that make you look and feel your best. With a focus on quality, craftsmanship, and personalized service, we turn your fashion ideas into reality — whether it’s everyday wear or something for a special occasion.
-                </p>
-            </div>
-            <div class="col-md-9 row">
-                <div class="col-md-5 col-12 p-center why-box">
-                    <p class="why-icon">🕒</p>
-                    <p class="fw-bold text-gold">Fast Turnaround (As Quick as 24 Hours!)</p>
-                    <p style="font-style: italic;">We value your time—get your outfit tailored and ready without the long wait.</p>
-                </div>
-                <div class="col-md-5 col-12 p-center why-box">
-                    <p class="why-icon">💎</p>
-                    <p class="fw-bold text-gold">Premium Fabrics & Attention to Detail</p>
-                    <p style="font-style: italic;">We handpick the finest materials and perfect every stitch for an exceptional finish.</p>
-                </div>
-                <div class="col-md-5 col-12 p-center why-box">
-                    <p class="why-icon">✂️</p>
-                    <p class="fw-bold text-gold">3+ Years of Combined Expertise</p>
-                    <p style="font-style: italic;">Our team blends traditional techniques with modern trends to deliver flawless results.</p>
-                </div>
-                <div class="col-md-5 col-12 p-center why-box">
-                    <p class="why-icon">✅</p>
-                    <p class="fw-bold text-gold">100% Satisfaction Guarantee</p>
-                    <p style="font-style: italic;">Your satisfaction is our promise—alterations and adjustments until it’s just right.</p>
-                </div>
-            </div>
+      <div class="row justify-content-center align-items-center">
+        <div class="about-left col-lg-3 col-md-6 px-5 py-4 h-100">
+          <h2 class="text-light">Why Few Tailoring?</h2>
+          <p class="text-light mt-3" style="text-align: justify">
+            At Few Tailoring, we believe every stitch matters. Our mission is to
+            deliver perfectly fitted, stylish garments that make you look and
+            feel your best. With a focus on quality, craftsmanship, and
+            personalized service, we turn your fashion ideas into reality —
+            whether it’s everyday wear or something for a special occasion.
+          </p>
         </div>
+        <div class="col-md-9 row">
+          <div class="col-md-5 col-12 p-center why-box">
+            <p class="why-icon">🕒</p>
+            <p class="fw-bold text-gold">
+              Fast Turnaround (As Quick as 24 Hours!)
+            </p>
+            <p style="font-style: italic">
+              We value your time—get your outfit tailored and ready without the
+              long wait.
+            </p>
+          </div>
+          <div class="col-md-5 col-12 p-center why-box">
+            <p class="why-icon">💎</p>
+            <p class="fw-bold text-gold">
+              Premium Fabrics & Attention to Detail
+            </p>
+            <p style="font-style: italic">
+              We handpick the finest materials and perfect every stitch for an
+              exceptional finish.
+            </p>
+          </div>
+          <div class="col-md-5 col-12 p-center why-box">
+            <p class="why-icon">✂️</p>
+            <p class="fw-bold text-gold">3+ Years of Combined Expertise</p>
+            <p style="font-style: italic">
+              Our team blends traditional techniques with modern trends to
+              deliver flawless results.
+            </p>
+          </div>
+          <div class="col-md-5 col-12 p-center why-box">
+            <p class="why-icon">✅</p>
+            <p class="fw-bold text-gold">100% Satisfaction Guarantee</p>
+            <p style="font-style: italic">
+              Your satisfaction is our promise—alterations and adjustments until
+              it’s just right.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- SERVICES SECTION -->
     <section id="services" class="services container py-5 text-center">
-        <h2>What We Offer</h2>
-        <p>Precision Tailoring for Every Need – From Everyday Wear to Once-in-a-Lifetime</p>
-        <div class="row justify-content-center align-items-center mt-5">
-            <div class="col-md-3 col-sm-6 mb-4 h-50 service-box service-box-left">
-              <h5>Alterations & Repairs</h5>
-              <p>Revive Your Wardrobe, Perfect Your Fit</p>
-              <button class="btn btn-warning text-white px-4 py-2 m-text">Get a Quote</button>
-            </div>
-            <div class="col-md-4 col-sm-6 mb-4 service-box-center">
-              <h5>Custom Tailoring</h5>
-              <p>Bespoke Garments, Designed for You</p>
-              <button class="btn btn-warning text-white px-4 py-2 m-text">Start Your Custom Design</button>
-            </div>
-            <div class="col-md-3 col-sm-6 mb-4 h-50 service-box service-box-right">
-              <h5>Wedding & Special Occasions</h5>
-              <p>Your Big Day, Perfectly Stitched</p>
-              <button class="btn btn-warning text-white px-4 py-2 m-text">Plan Your Perfect Look</button>
-            </div>
+      <h2>What We Offer</h2>
+      <p>
+        Precision Tailoring for Every Need – From Everyday Wear to
+        Once-in-a-Lifetime
+      </p>
+      <div class="row justify-content-center align-items-center mt-5">
+        <div class="col-md-3 col-sm-6 mb-4 h-50 service-box service-box-left">
+          <h5>Alterations & Repairs</h5>
+          <p>Revive Your Wardrobe, Perfect Your Fit</p>
+          <button class="btn btn-warning text-white px-4 py-2 m-text">
+            Get a Quote
+          </button>
         </div>
+        <div class="col-md-4 col-sm-6 mb-4 service-box-center">
+          <h5>Custom Tailoring</h5>
+          <p>Bespoke Garments, Designed for You</p>
+          <button class="btn btn-warning text-white px-4 py-2 m-text">
+            Start Your Custom Design
+          </button>
+        </div>
+        <div class="col-md-3 col-sm-6 mb-4 h-50 service-box service-box-right">
+          <h5>Wedding & Special Occasions</h5>
+          <p>Your Big Day, Perfectly Stitched</p>
+          <button class="btn btn-warning text-white px-4 py-2 m-text">
+            Plan Your Perfect Look
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- CALL TO ACTION SECTION -->
     <section class="custom-cta-section">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-8">
-              <h4 class="cta-title">Call To Action</h4>
-              <p class="cta-text">Book a free consultation today, and let’s create something extraordinary together.</p>
-            </div>
-            <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
-              <a href="#" class="cta-button">Call To Action</a>
-            </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h4 class="cta-title">Call To Action</h4>
+            <p class="cta-text">
+              Book a free consultation today, and let’s create something
+              extraordinary together.
+            </p>
+          </div>
+          <div class="col-md-4 text-md-end text-center mt-3 mt-md-0">
+            <a href="#" class="cta-button">Call To Action</a>
           </div>
         </div>
+      </div>
     </section>
-  
-    <!--REVIEW SECTION--> 
+
+    <!-- REVIEW SECTION -->
     <section class="review py-5 bg-light">
       <div class="container">
         <h2 class="text-center mb-4">Hear From Our Clients</h2>
         <div class="scroll-container px-2">
-
           <!-- Card 1 -->
           <div class="review-card">
             <div class="card p-3 shadow-sm">
               <div class="d-flex align-items-center mb-3">
-                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Rachel M" class="rounded-circle me-3" width="50" height="50">
+                <img
+                  src="https://randomuser.me/api/portraits/women/1.jpg"
+                  alt="Rachel M"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
                 <div>
                   <h6 class="mb-0">Rachel M</h6>
                   <small class="text-muted">2025/01/01</small>
                 </div>
               </div>
               <div class="mb-2 text-warning">★★★★★</div>
-              <p class="text-muted" style="font-style: italic;">
-                <span class="text-warning" style="font-size: 20px;">" </span>
-                I was a nervous bride with a vintage gown that needed major alterations. The team listened to my vision, preserved the delicate lace, and made it fit like it was made for me.
-                <span class="text-warning" style="font-size: 20px;">" </span>
+              <p class="text-muted" style="font-style: italic">
+                <span class="text-warning" style="font-size: 20px">" </span>
+                I was a nervous bride with a vintage gown that needed major
+                alterations. The team listened to my vision, preserved the
+                delicate lace, and made it fit like it was made for me.
+                <span class="text-warning" style="font-size: 20px">" </span>
               </p>
             </div>
           </div>
@@ -203,17 +292,24 @@
           <div class="review-card">
             <div class="card p-3 shadow-sm">
               <div class="d-flex align-items-center mb-3">
-                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Michael K" class="rounded-circle me-3" width="50" height="50">
+                <img
+                  src="https://randomuser.me/api/portraits/men/2.jpg"
+                  alt="Michael K"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
                 <div>
                   <h6 class="mb-0">Michael K</h6>
                   <small class="text-muted">2025/01/05</small>
                 </div>
               </div>
               <div class="mb-2 text-warning">★★★★★</div>
-              <p class="text-muted" style="font-style: italic;">
-                <span class="text-warning" style="font-size: 20px;">" </span>
-                I wanted a suit that stood out for my wedding, and Few Tailoring nailed it! The attention to detail was incredible.
-                <span class="text-warning" style="font-size: 20px;">" </span>
+              <p class="text-muted" style="font-style: italic">
+                <span class="text-warning" style="font-size: 20px">" </span>
+                I wanted a suit that stood out for my wedding, and Few Tailoring
+                nailed it! The attention to detail was incredible.
+                <span class="text-warning" style="font-size: 20px">" </span>
               </p>
             </div>
           </div>
@@ -222,17 +318,24 @@
           <div class="review-card">
             <div class="card p-3 shadow-sm">
               <div class="d-flex align-items-center mb-3">
-                <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Priya S" class="rounded-circle me-3" width="50" height="50">
+                <img
+                  src="https://randomuser.me/api/portraits/women/3.jpg"
+                  alt="Priya S"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
                 <div>
                   <h6 class="mb-0">Priya S</h6>
                   <small class="text-muted">2025/01/09</small>
                 </div>
               </div>
               <div class="mb-2 text-warning">★★★★★</div>
-              <p class="text-muted" style="font-style: italic;">
-                <span class="text-warning" style="font-size: 20px;">" </span>
-                They’ve hemmed my work pants, fixed my kids’ backpack zippers, and tailored my jacket. Fast and friendly.
-                <span class="text-warning" style="font-size: 20px;">" </span>
+              <p class="text-muted" style="font-style: italic">
+                <span class="text-warning" style="font-size: 20px">" </span>
+                They’ve hemmed my work pants, fixed my kids’ backpack zippers,
+                and tailored my jacket. Fast and friendly.
+                <span class="text-warning" style="font-size: 20px">" </span>
               </p>
             </div>
           </div>
@@ -241,17 +344,24 @@
           <div class="review-card">
             <div class="card p-3 shadow-sm">
               <div class="d-flex align-items-center mb-3">
-                <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="David R" class="rounded-circle me-3" width="50" height="50">
+                <img
+                  src="https://randomuser.me/api/portraits/men/4.jpg"
+                  alt="David R"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
                 <div>
                   <h6 class="mb-0">David R</h6>
                   <small class="text-muted">2025/01/14</small>
                 </div>
               </div>
               <div class="mb-2 text-warning">★★★★★</div>
-              <p class="text-muted" style="font-style: italic;">
-                <span class="text-warning" style="font-size: 20px;">" </span>
-                My grandfather’s 1940s coat was restored beautifully. Now it’s a family heirloom again.
-                <span class="text-warning" style="font-size: 20px;">" </span>
+              <p class="text-muted" style="font-style: italic">
+                <span class="text-warning" style="font-size: 20px">" </span>
+                My grandfather’s 1940s coat was restored beautifully. Now it’s a
+                family heirloom again.
+                <span class="text-warning" style="font-size: 20px">" </span>
               </p>
             </div>
           </div>
@@ -260,274 +370,456 @@
           <div class="review-card">
             <div class="card p-3 shadow-sm">
               <div class="d-flex align-items-center mb-3">
-                <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Sarah L" class="rounded-circle me-3" width="50" height="50">
+                <img
+                  src="https://randomuser.me/api/portraits/women/5.jpg"
+                  alt="Sarah L"
+                  class="rounded-circle me-3"
+                  width="50"
+                  height="50"
+                />
                 <div>
                   <h6 class="mb-0">Sarah L</h6>
                   <small class="text-muted">2025/01/20</small>
                 </div>
               </div>
               <div class="mb-2 text-warning">★★★★★</div>
-              <p class="text-muted" style="font-style: italic;">
-                <span class="text-warning" style="font-size: 20px;">" </span>
-                Our company ordered 20+ custom blazers and they handled fittings and delivery perfectly.
-                <span class="text-warning" style="font-size: 20px;">" </span>
+              <p class="text-muted" style="font-style: italic">
+                <span class="text-warning" style="font-size: 20px">" </span>
+                Our company ordered 20+ custom blazers and they handled fittings
+                and delivery perfectly.
+                <span class="text-warning" style="font-size: 20px">" </span>
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
 
-    <!--FEATURE BLOG POST SECTION-->
+    <!-- FEATURE BLOG POST SECTION -->
     <section id="blog" class="container my-5">
-        <h2 class="text-center mb-4">Our Latest Blog Posts</h2>
-        <div class="row g-4">
-      
-          <!-- Blog Post 1 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm blog-card">
-              <img src="resources/Home/Blog/blog - fabric.jpg" class="card-img-top" alt="blog post image">
-              <div class="card-body blog-card-bottom">
-                <p class="text-warning fw-bold mb-2">Fashion Tips</p>
-                <h5 class="card-title">5 Tips for Choosing the Perfect Fabric for Your Custom Garments</h5>
-              </div>
-              <div class="card-footer d-flex align-items-center">
-                <img src="https://randomuser.me/api/portraits/men/1.jpg" class="rounded-circle me-2" alt="author image" width="40" height="40">
-                <div>
-                  <p class="mb-0 fw-bold text-warning-emphasis">Alex Nolan</p>
-                  <small class="text-muted">2025/01/03</small>
-                </div>
+      <h2 class="text-center mb-4">Our Latest Blog Posts</h2>
+      <div class="row g-4">
+        <!-- Blog Post 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm blog-card">
+            <img
+              src="resources/Home/Blog/blog - fabric.jpg"
+              class="card-img-top"
+              alt="blog post image"
+            />
+            <div class="card-body blog-card-bottom">
+              <p class="text-warning fw-bold mb-2">Fashion Tips</p>
+              <h5 class="card-title">
+                5 Tips for Choosing the Perfect Fabric for Your Custom Garments
+              </h5>
+            </div>
+            <div class="card-footer d-flex align-items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/1.jpg"
+                class="rounded-circle me-2"
+                alt="author image"
+                width="40"
+                height="40"
+              />
+              <div>
+                <p class="mb-0 fw-bold text-warning-emphasis">Alex Nolan</p>
+                <small class="text-muted">2025/01/03</small>
               </div>
             </div>
           </div>
-      
-          <!-- Blog Post 2 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm blog-card">
-              <img src="resources/Home/Blog/blog -tailor.jpg" class="card-img-top" alt="blog post image">
-              <div class="card-body blog-card-bottom">
-                <p class="text-warning fw-bold mb-2">Garment Care</p>
-                <h5 class="card-title">How to Care for Your Tailored Clothing: A Complete Guide</h5>
-              </div>
-              <div class="card-footer d-flex align-items-center">
-                <img src="https://randomuser.me/api/portraits/men/2.jpg" class="rounded-circle me-2" alt="author image" width="40" height="40">
-                <div>
-                  <p class="mb-0 fw-bold text-warning-emphasis">Jason Romero</p>
-                  <small class="text-muted">2025/01/12</small>
-                </div>
-              </div>
-            </div>
-          </div>
-      
-          <!-- Blog Post 3 -->
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm blog-card">
-              <img src="resources/Home/Blog/blog needs.webp" class="card-img-top" alt="blog post image">
-              <div class="card-body blog-card-bottom">
-                <p class="text-warning fw-bold mb-2">Alterations</p>
-                <h5 class="card-title">The Ultimate Guide to Alterations: What You Need to Know</h5>
-              </div>
-              <div class="card-footer d-flex align-items-center">
-                <img src="https://randomuser.me/api/portraits/men/3.jpg" class="rounded-circle me-2" alt="author image" width="40" height="40">
-                <div>
-                  <p class="mb-0 fw-bold text-warning-emphasis">David Sean</p>
-                  <small class="text-muted">2025/01/23</small>
-                </div>
-              </div>
-            </div>
-          </div>
-      
         </div>
-      
-        <!-- More Button -->
-        <div class="text-center mt-4">
-          <a href="blog/index.html" class="btn btn-warning text-white px-4 py-2 m-text">More</a>
+
+        <!-- Blog Post 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm blog-card">
+            <img
+              src="resources/Home/Blog/blog -tailor.jpg"
+              class="card-img-top"
+              alt="blog post image"
+            />
+            <div class="card-body blog-card-bottom">
+              <p class="text-warning fw-bold mb-2">Garment Care</p>
+              <h5 class="card-title">
+                How to Care for Your Tailored Clothing: A Complete Guide
+              </h5>
+            </div>
+            <div class="card-footer d-flex align-items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/2.jpg"
+                class="rounded-circle me-2"
+                alt="author image"
+                width="40"
+                height="40"
+              />
+              <div>
+                <p class="mb-0 fw-bold text-warning-emphasis">Jason Romero</p>
+                <small class="text-muted">2025/01/12</small>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- Blog Post 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm blog-card">
+            <img
+              src="resources/Home/Blog/blog needs.webp"
+              class="card-img-top"
+              alt="blog post image"
+            />
+            <div class="card-body blog-card-bottom">
+              <p class="text-warning fw-bold mb-2">Alterations</p>
+              <h5 class="card-title">
+                The Ultimate Guide to Alterations: What You Need to Know
+              </h5>
+            </div>
+            <div class="card-footer d-flex align-items-center">
+              <img
+                src="https://randomuser.me/api/portraits/men/3.jpg"
+                class="rounded-circle me-2"
+                alt="author image"
+                width="40"
+                height="40"
+              />
+              <div>
+                <p class="mb-0 fw-bold text-warning-emphasis">David Sean</p>
+                <small class="text-muted">2025/01/23</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Button -->
+      <div class="text-center mt-4">
+        <a
+          href="blog/index.html"
+          class="btn btn-warning text-white px-4 py-2 m-text"
+          >More</a
+        >
+      </div>
     </section>
 
-    <!--CONTACT US SECTION-->
+    <!-- CONTACT US SECTION -->
     <section class="container my-5 p-4 contact-us">
-        <h2 id="contact" class="text-center mb-4">Contact Us</h2>
-        <div class="row g-4">
-      
-          <!-- Contact Info -->
-          <div class="col-md-4">
-            <ul class="list-unstyled">
-              <li class="d-flex align-items-start mb-4">
-                <img src="resources/Home/Contact Us/address.png" alt="Address Icon" class="me-3" width="30">
-                <div>
-                  <p class="fw-bold mb-1 lm-text">Address</p>
-                  <p class="text-muted m-text">A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </li>
-              <li class="d-flex align-items-start mb-4">
-                <img src="resources/Home/Contact Us/call.png" alt="Call Icon" class="me-3" width="30">
-                <div>
-                  <p class="fw-bold mb-1 lm-text">Call Us</p>
-                  <p class="text-muted m-text">+1 5589 55488 55</p>
-                </div>
-              </li>
-              <li class="d-flex align-items-start mb-4">
-                <img src="resources/Home/Contact Us/email.png" alt="Email Icon" class="me-3" width="30">
-                <div>
-                  <p class="fw-bold mb-1 lm-text">Email Us</p>
-                  <p class="text-muted m-text">info@example.com</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-      
-          <!-- Contact Form -->
-          <div class="col-md-8">
-            <form>
-              <div class="row g-3">
-                <div class="col-md-6">
-                  <input type="text" class="form-control m-text" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6">
-                  <input type="email" class="form-control m-text" placeholder="Your Email" required>
-                </div>
-                <div class="col-12">
-                  <input type="text" class="form-control m-text" placeholder="Subject" required>
-                </div>
-                <div class="col-12">
-                  <textarea class="form-control m-text" rows="5" placeholder="Message" required></textarea>
-                </div>
-                <div class="col-12 text-end">
-                  <button type="submit" class="btn btn-warning text-white px-4 py-2 m-text">Send Message</button>
-                </div>
+      <h2 id="contact" class="text-center mb-4">Contact Us</h2>
+      <div class="row g-4">
+        <!-- Contact Info -->
+        <div class="col-md-4">
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-start mb-4">
+              <img
+                src="resources/Home/Contact Us/address.png"
+                alt="Address Icon"
+                class="me-3"
+                width="30"
+              />
+              <div>
+                <p class="fw-bold mb-1 lm-text">Address</p>
+                <p class="text-muted m-text">
+                  A108 Adam Street, New York, NY 535022
+                </p>
               </div>
-            </form>
-          </div>
-      
+            </li>
+            <li class="d-flex align-items-start mb-4">
+              <img
+                src="resources/Home/Contact Us/call.png"
+                alt="Call Icon"
+                class="me-3"
+                width="30"
+              />
+              <div>
+                <p class="fw-bold mb-1 lm-text">Call Us</p>
+                <p class="text-muted m-text">+1 5589 55488 55</p>
+              </div>
+            </li>
+            <li class="d-flex align-items-start mb-4">
+              <img
+                src="resources/Home/Contact Us/email.png"
+                alt="Email Icon"
+                class="me-3"
+                width="30"
+              />
+              <div>
+                <p class="fw-bold mb-1 lm-text">Email Us</p>
+                <p class="text-muted m-text">info@example.com</p>
+              </div>
+            </li>
+          </ul>
         </div>
-    </section>
 
-    <!--FOOTER SECTION-->
-    <footer>
-        <section class=" text-white py-5" style="height: auto; background-color: #1f2235;">
-            <div class="container">
-              <div class="row g-4">
-          
-                <!-- Contact Info -->
-                <div class="col-md-3">
-                  <h4>Few Tailoring</h4>
-                  <address class="mb-2 sm-text">A108 Adam Street, New York, NY 535022</address>
-                  <p class="sm-text"><strong>Phone:</strong> +1 5589 55488 55</p>
-                  <p class="sm-text"><strong>Email:</strong> info@example.com</p>
-                  <p class="sm-text"><strong>Hours:</strong>&nbsp;Mon–Fri: 9 AM – 7 PM<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat: 10 AM – 5 PM<br>Closed Sundays</p>
-                </div>
-          
-                <!-- Sections -->
-                <div class="col-md-3">
-                  <h5>Sections</h5>
-                  <ul class="list-unstyled sm-text">
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Home</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">About</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Services</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Portfolio</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Blog</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Contact Us</a></li>
-                  </ul>
-                </div>
-          
-                <!-- Services -->
-                <div class="col-md-3">
-                  <h5>Services</h5>
-                  <ul class="list-unstyled sm-text">
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Custom Tailoring</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Alteration & Repairs</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Wedding & Special Occasions</a></li>
-                    <li style="line-height: 25px;"><a href="#" class="text-white-50 text-decoration-none footer-link">Fabric Sourcing & Design Consultation</a></li>
-                  </ul>
-                </div>
-          
-                <!-- Newsletter -->
-                <div class="col-md-3">
-                  <h5>Our Newsletter</h5>
-                  <p class="text-white-50 sm-text">Join Our Newsletter for Tailoring Tips & Exclusive Offers!</p>
-                  <form class="d-flex">
-                    <input type="email" class="form-control me-2 sm-text" placeholder="Your Email">
-                    <button type="submit" class="btn btn-warning text-white sm-text">Subscribe</button>
-                  </form>
-                  <div class="d-flex gap-2 sm-text justify-content-left">
-                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/fb.png" alt="Facebook" width="40"></a>
-                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/insta.png" alt="Instagram" width="40"></a>
-                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/twitte.png" alt="Twitter" width="40"></a>
-                    <a href="#" style="margin: 18px 3px;"><img src="resources/Home/Social Media/linkedin.png" alt="LinkedIn" width="40"></a>
-                  </div>
-                </div>
-        
+        <!-- Contact Form -->
+        <div class="col-md-8">
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <input
+                  type="text"
+                  class="form-control m-text"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="col-md-6">
+                <input
+                  type="email"
+                  class="form-control m-text"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <input
+                  type="text"
+                  class="form-control m-text"
+                  placeholder="Subject"
+                  required
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  class="form-control m-text"
+                  rows="5"
+                  placeholder="Message"
+                  required
+                ></textarea>
+              </div>
+              <div class="col-12 text-end">
+                <button
+                  type="submit"
+                  class="btn btn-warning text-white px-4 py-2 m-text"
+                >
+                  Send Message
+                </button>
               </div>
             </div>
-        </section>
+          </form>
+        </div>
+      </div>
+    </section>
 
-        <hr style="height: 1px; margin: 0;">
+    <!-- FOOTER SECTION -->
+    <footer>
+      <section
+        class="text-white py-5"
+        style="height: auto; background-color: #1f2235"
+      >
+        <div class="container">
+          <div class="row g-4">
+            <!-- Contact Info -->
+            <div class="col-md-3">
+              <h4>Few Tailoring</h4>
+              <address class="mb-2 sm-text">
+                A108 Adam Street, New York, NY 535022
+              </address>
+              <p class="sm-text"><strong>Phone:</strong> +1 5589 55488 55</p>
+              <p class="sm-text"><strong>Email:</strong> info@example.com</p>
+              <p class="sm-text">
+                <strong>Hours:</strong>&nbsp;Mon–Fri: 9 AM – 7 PM<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sat:
+                10 AM – 5 PM<br />Closed Sundays
+              </p>
+            </div>
 
-        <section class="text-center text-white py-3"  style="font-size: 12px; background-color: #1f2235;">
-            <p class="mb-0">&copy; 2025 Few Tailoring – All Rights Reserved</p>
-        </section>
+            <!-- Sections -->
+            <div class="col-md-3">
+              <h5>Sections</h5>
+              <ul class="list-unstyled sm-text">
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Home</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >About</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Services</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Blog</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Services -->
+            <div class="col-md-3">
+              <h5>Services</h5>
+              <ul class="list-unstyled sm-text">
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Custom Tailoring</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Alteration & Repairs</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Wedding & Special Occasions</a
+                  >
+                </li>
+                <li style="line-height: 25px">
+                  <a
+                    href="#"
+                    class="text-white-50 text-decoration-none footer-link"
+                    >Fabric Sourcing & Design Consultation</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="col-md-3">
+              <h5>Our Newsletter</h5>
+              <p class="text-white-50 sm-text">
+                Join Our Newsletter for Tailoring Tips & Exclusive Offers!
+              </p>
+              <form class="d-flex">
+                <input
+                  type="email"
+                  class="form-control me-2 sm-text"
+                  placeholder="Your Email"
+                />
+                <button
+                  type="submit"
+                  class="btn btn-warning text-white sm-text"
+                >
+                  Subscribe
+                </button>
+              </form>
+              <div class="d-flex gap-2 sm-text justify-content-left">
+                <a href="#" style="margin: 18px 3px"
+                  ><img
+                    src="resources/Home/Social Media/fb.png"
+                    alt="Facebook"
+                    width="40"
+                /></a>
+                <a href="#" style="margin: 18px 3px"
+                  ><img
+                    src="resources/Home/Social Media/insta.png"
+                    alt="Instagram"
+                    width="40"
+                /></a>
+                <a href="#" style="margin: 18px 3px"
+                  ><img
+                    src="resources/Home/Social Media/twitte.png"
+                    alt="Twitter"
+                    width="40"
+                /></a>
+                <a href="#" style="margin: 18px 3px"
+                  ><img
+                    src="resources/Home/Social Media/linkedin.png"
+                    alt="LinkedIn"
+                    width="40"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr style="height: 1px; margin: 0" />
+
+      <section
+        class="text-center text-white py-3"
+        style="font-size: 12px; background-color: #1f2235"
+      >
+        <p class="mb-0">&copy; 2025 Few Tailoring – All Rights Reserved</p>
+      </section>
     </footer>
 
     <script>
+      //FOR NAVIGATION BAR BUTTON AND LINKS
       const sections = document.querySelectorAll("section");
       const navLinks = document.querySelectorAll(".nav-link");
-    
+
       window.addEventListener("scroll", () => {
         let current = "";
-        sections.forEach(section => {
+        sections.forEach((section) => {
           const sectionTop = section.offsetTop - 100;
           if (pageYOffset >= sectionTop) {
             current = section.getAttribute("id");
           }
         });
-    
-        navLinks.forEach(link => {
+
+        navLinks.forEach((link) => {
           link.classList.remove("active");
           if (link.getAttribute("href") === "#" + current) {
             link.classList.add("active");
           }
         });
       });
-    
-      navLinks.forEach(link => {
+
+      navLinks.forEach((link) => {
         link.addEventListener("click", function () {
-          navLinks.forEach(nav => nav.classList.remove("active"));
+          navLinks.forEach((nav) => nav.classList.remove("active"));
           this.classList.add("active");
         });
       });
-
     </script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const nav = document.querySelector("nav");
-    const header = document.querySelector("header");
+    <script>
+      //FOR NAVIGATION BAR COLOR
+      document.addEventListener("DOMContentLoaded", function () {
+        const nav = document.querySelector("nav");
+        const header = document.querySelector("header");
 
-    function updateNavbarColor() {
-      const headerBottom = header.offsetTop + header.offsetHeight;
-      const scrollY = window.scrollY;
+        function updateNavbarColor() {
+          const headerBottom = header.offsetTop + header.offsetHeight;
+          const scrollY = window.scrollY;
 
-      if (scrollY >= headerBottom) {
-        nav.style.backgroundColor = "#1f2235";
-      } else {
-        nav.style.backgroundColor = "#1f223500";
-      }
-    }
+          if (scrollY >= headerBottom) {
+            nav.style.backgroundColor = "#1f2235";
+          } else {
+            nav.style.backgroundColor = "#1f223500";
+          }
+        }
 
-    // Run once on load
-    updateNavbarColor();
+        // Run once on load
+        updateNavbarColor();
 
-    // Run on scroll
-    window.addEventListener("scroll", updateNavbarColor);
-  });
-</script>
-
-
-    
+        // Run on scroll
+        window.addEventListener("scroll", updateNavbarColor);
+      });
+    </script>
 
     <!--BOOTSTRAP JS FILE-->
     <script src="bootstrap/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
